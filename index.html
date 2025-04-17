@@ -17,51 +17,5 @@
             <p>This is a simple web page.</p>
         </section>
     </main>
-    <script>
-        // Inline JavaScript for demonstration
-        console.log("Page loaded successfully.");
-        document.addEventListener("DOMContentLoaded", function() {
-            const content = document.getElementById('content');
-            content.innerHTML += '<p>JavaScript is working!</p>';
-        });
-
-        let count = 0;
-        while (count<3) {
-            computer = Math.randint(1,3);
-            player = parseInt(prompt("Enter a number between 1 and 3: "));
-            if (player < 1 || player > 3) {
-                alert("Invalid input. Please enter a number between 1 and 3.");
-                continue;
-            }
-            if (computer == player) {
-                alert("You win!");
-            } else {
-                alert("You lose!");
-            }
-            if (computer == 1) {
-                alert("Computer chose Rock.");
-            } else if (computer == 2) {
-                alert("Computer chose Paper.");
-            } else {
-                alert("Computer chose Scissors.");
-            }
-            if (player == 1) {
-                alert("You chose Rock.");
-            } else if (player == 2) {
-                alert("You chose Paper.");
-            } else {
-                alert("You chose Scissors.");
-            }
-            if (computer == player) {
-                alert("It's a tie!");
-            } else if ((computer == 1 && player == 2) || (computer == 2 && player == 3) || (computer == 3 && player == 1)) {
-                alert("You lose!");
-            } else {
-                alert("You win!");
-            }
-
-            count++;
-            console.log("Round ${count}.");
-        }
-    </script>
+    
 </html>
